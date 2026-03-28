@@ -1,0 +1,69 @@
+/* General Layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+}
+
+/* Main Container */
+#content {
+    width: 60%;
+    padding: 40px;
+    background-color: #fff;
+    min-height: 100vh;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Sidebar Styling */
+#sidebar {
+    width: 25%;
+    padding: 40px 20px;
+    background-color: #babec1;
+    border-left: 1px solid #bbbec2;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.5rem;
+    color: #212529;
+    margin-bottom: 20px;
+}
+
+h2 a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.2s ease;
+}
+
+h2 a:hover {
+    color: #0056b3;
+}
+
+/* Date and Meta Info */
+.date {
+    color: #6c757d;
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+/* Post Body Spacing */
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    #content, #sidebar {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
